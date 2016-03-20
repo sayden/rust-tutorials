@@ -1,0 +1,406 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"local",
+				"local_addr"
+			],
+			[
+				"ma",
+				"maximum"
+			],
+			[
+				"an",
+				"angular-resource"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"some",
+				"someInfo"
+			],
+			[
+				"compo",
+				"componentDidMount"
+			],
+			[
+				"ba",
+				"badgeMessge"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 92.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"markdown",
+				"Set Syntax: Markdown Light"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"markd",
+				"Set Syntax: Markdown GFM"
+			],
+			[
+				"markdow",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"makr",
+				"Set Syntax: Markdown"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Preferences: Browse Packages"
+			],
+			[
+				"ssxml",
+				"Set Syntax: XML"
+			],
+			[
+				"ssc++",
+				"Set Syntax: C++"
+			],
+			[
+				"sshas",
+				"Set Syntax: Haskell"
+			],
+			[
+				"ssba",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"ssjs",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ss",
+				"Set Syntax: Groovy"
+			],
+			[
+				"sshtml",
+				"Set Syntax: HTML"
+			],
+			[
+				"sshmtl",
+				"Set Syntax: HTML"
+			],
+			[
+				"ssjava",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ssjo",
+				"Set Syntax: JSON"
+			],
+			[
+				"ssjso",
+				"Set Syntax: JSON"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/mariocaster/tmp/24daysOfRust/day2-primal/src/main.rs",
+		"/home/mariocaster/tmp/24daysOfRust/day2-primal/Cargo.toml",
+		"/home/mariocaster/.config/sublime-text-3/Packages/GoSublime/USAGE.md",
+		"/tmp/43.html",
+		"/home/mariocaster/.config/sublime-text-3/Packages/GoSublime/GoSublime.sublime-settings",
+		"/home/mariocaster/.config/sublime-text-3/Packages/GoSublime/CHANGELOG.md",
+		"/usr/share/doc/terminator/html/index.html",
+		"/home/mariocaster/Desktop/ds320_slides/DS320 Slides/Click Here To View.html",
+		"/home/mariocaster/Desktop/ds320_slides/DS320 Slides/slides-1.html",
+		"/home/mariocaster/WebstormProjects/react-router/examples/master-detail/index.html",
+		"/home/mariocaster/Downloads/panel-indicators.ymp",
+		"/home/mariocaster/Desktop/DataRescue IDA Pro Advanced v5.2 for Linux/pel331twe/readme.txt",
+		"/home/mariocaster/Desktop/DataRescue IDA Pro Advanced v5.2 for Linux/file_id.diz",
+		"/etc/yum.repos.d/fedy-installer.html",
+		"/etc/yum.repos.d/fedy-installer",
+		"/home/mariocaster/tmp/scalaKafkaConsumer/src/main/nodejs/server.js",
+		"/home/mariocaster/deleteme/master.dust",
+		"/home/mariocaster/tmp/scalaKafkaConsumer/src/main/nodejs/public/templates/layouts/master.dust",
+		"/home/mariocaster/tmp/scalaKafkaConsumer/src/main/nodejs/index.js",
+		"/tmp/a test/index.js",
+		"/tmp/a test/public/js/app.js",
+		"/tmp/a test/public/templates/index.dust",
+		"/tmp/a test/public/templates/layouts/master.dust",
+		"/home/mariocaster/tmp/sparkKafkaFront/package.json",
+		"/home/mariocaster/tmp/scalaKafkaConsumer/src/main/nodejs/package.json",
+		"/home/mariocaster/SP1.csv",
+		"/home/mariocaster/restaurants_sample.csv",
+		"/tmp/exTest/package.json",
+		"/tmp/exTest/views/index.ejs",
+		"/tmp/exTest/routes/index.js",
+		"/tmp/exTest/routes/users.js",
+		"/tmp/exTest/app.js",
+		"/home/mariocaster/tmp/orientdbTests/test.es6",
+		"/home/mariocaster/IdeaProjects/ninety-nine-erlang-exercises/README.md",
+		"/run/media/mariocaster/common2/trabajo/Sumidero redirection.txt",
+		"/run/media/mariocaster/COMMON-FAT3/Continuous integration",
+		"/home/mariocaster/Dropbox/linkedinMessage",
+		"/home/mariocaster/Dropbox/Daganzo.txt",
+		"/home/mariocaster/Downloads/ES/readme.txt",
+		"/home/mariocaster/Downloads/ES/ES.txt",
+		"/home/mariocaster/ClionProjects/openCvTutorial/test.py",
+		"/home/mariocaster/WebstormProjects/tcm-back/src/server/out/index.html",
+		"/home/mariocaster/hello.cpp",
+		"/home/mariocaster/WebstormProjects/git-cli/README.md",
+		"/tmp/haskell/baby.hs",
+		"/home/mariocaster/atProjects/mlm-db/scripts/schema.sql",
+		"/home/mariocaster/atProjects/mlm-db/scripts/data.sql",
+		"/home/mariocaster/WebstormProjects/git-cli/coverage/lcov-report/index.html",
+		"/home/mariocaster/WebstormProjects/git-cli/instrument/index.js",
+		"/run/media/mariocaster/UNTITLED/descargar zip",
+		"/home/mariocaster/atProjects/projectUnzipper",
+		"/home/mariocaster/Downloads/MiguelBegazo_vs_mariocaster_2014_12_10.pgn",
+		"/home/mariocaster/Downloads/dictionary",
+		"/home/mariocaster/Downloads/untitled.html",
+		"/run/media/mariocaster/common2/nodeAlert/index.html",
+		"/run/media/mariocaster/common2/Curso Nivel II - Notas.txt",
+		"/home/mariocaster/Desktop/asd.html",
+		"/home/mariocaster/WebstormProjects/caplet.js/.gitignore",
+		"/home/mariocaster/WebstormProjects/caplet.js/new file",
+		"/run/media/mariocaster/COMMON-FAT3/3d printer/3D Models/MY DESIGNS/Bike-Mount/Soporte Bicis.STL",
+		"/home/mariocaster/WebstormProjects/projectTest/index.html",
+		"/run/media/mariocaster/E8F484CEF484A104/Users/Mario/Desktop/tennis_FINAL.stl",
+		"/run/media/mariocaster/COMMON-FAT3/3d printer/3D Models/PRUSA i3/[PRUSA i3] Simple_Filament_Spool_Stand_V32/Spool_stand_3.1_side.stl",
+		"/home/mariocaster/Downloads/serial.log",
+		"/run/media/mariocaster/COMMON-FAT3/3d printer/CONFIG/CURA_PROFILE.ini",
+		"/home/mariocaster/tmp/client/bower.json",
+		"/home/mariocaster/WebstormProjects/timespent/public/index.html",
+		"/home/mariocaster/tmp/client/navbar.html",
+		"/home/mariocaster/tmp/timespent/bower.json",
+		"/home/mariocaster/EDITED copy.gcode",
+		"/home/mariocaster/tmp/timespent/package.json",
+		"/home/mariocaster/tmp/timespent/server.js",
+		"/home/mariocaster/tmp/timespent/public/index.html",
+		"/home/mariocaster/tmp/timespent/.bowerrc",
+		"/home/mariocaster/tmp/timespent/log",
+		"/home/mariocaster/tmp/timespent/index.html",
+		"/home/mariocaster/tmp/foundation-react/index.html",
+		"/home/mariocaster/WebstormProjects/react-foundation/index.html",
+		"/home/mariocaster/Downloads/3d printer/info_spanish/Links Createc 3D.txt",
+		"/home/mariocaster/WebstormProjects/myplants/packages/system/public/views/header.html",
+		"/home/mariocaster/WebstormProjects/openshift-projects/myplants/bower_components/build/js/dist.js",
+		"/home/mariocaster/WebstormProjects/myplants/config/assets.json",
+		"/home/mariocaster/WebstormProjects/myplants/config/express.js",
+		"/home/mariocaster/WebstormProjects/myplants/packages/custom/plants/app.js",
+		"/home/mariocaster/WebstormProjects/myplants/packages/custom/plants/public/controllers/plants.js",
+		"/home/mariocaster/WebstormProjects/myplants/Gruntfile.js",
+		"/home/mariocaster/WebstormProjects/myplants/karma.conf.js",
+		"/home/mariocaster/WebstormProjects/myplants/package.json",
+		"/home/mariocaster/WebstormProjects/myplants/packages/system/package.json",
+		"/home/mariocaster/WebstormProjects/myplants/packages/system/app.js",
+		"/home/mariocaster/WebstormProjects/myplants/packages/system/public/init.js",
+		"/home/mariocaster/WebstormProjects/myplants/packages/system/public/system.js",
+		"/home/mariocaster/WebstormProjects/myplants/packages/system/public/controllers/index.js",
+		"/home/mariocaster/WebstormProjects/myplants/packages/system/server/controllers/index.js",
+		"/home/mariocaster/WebstormProjects/myplants/packages/custom/plants/server/routes/plants.js",
+		"/home/mariocaster/WebstormProjects/myplants/server.js",
+		"/home/mariocaster/WebstormProjects/myplants/packages/system/server/routes/index.js",
+		"/home/mariocaster/WebstormProjects/myplants/packages/system/server/routes/menus.js",
+		"/home/mariocaster/WebstormProjects/myplants/config/env/development.js",
+		"/home/mariocaster/WebstormProjects/myplants/packages/custom/plants/public/routes/plants.js",
+		"/home/mariocaster/WebstormProjects/myplants/packages/custom/plants/public/views/addPhoto.html",
+		"/home/mariocaster/Documents/myplants/config/env/production.js",
+		"/home/mariocaster/WebstormProjects/myplants/node_modules/mongoose/node_modules/mongodb/node_modules/bson/lib/bson/objectid.js",
+		"/home/mariocaster/WebstormProjects/careYourPlants/Gruntfile.js",
+		"/home/mariocaster/WebstormProjects/careYourPlants/packages/custom/plants/app.js",
+		"/home/mariocaster/WebstormProjects/careYourPlants/bower.json",
+		"/home/mariocaster/WebstormProjects/careYourPlants/packages/custom/plants/bower.json",
+		"/home/mariocaster/WebstormProjects/careYourPlants/packages/custom/plants/package.json",
+		"/home/mariocaster/WebstormProjects/careYourPlants/karma.conf.js",
+		"/home/mariocaster/WebstormProjects/careYourPlants/LICENSE",
+		"/home/mariocaster/WebstormProjects/careYourPlants/mean.json",
+		"/home/mariocaster/WebstormProjects/careYourPlants/package.json",
+		"/home/mariocaster/WebstormProjects/careYourPlants/Procfile",
+		"/home/mariocaster/WebstormProjects/careYourPlants/README.md",
+		"/home/mariocaster/WebstormProjects/careYourPlants/server.js",
+		"/home/mariocaster/WebstormProjects/careYourPlants/packages/custom/plants/server/controllers/plants.js",
+		"/home/mariocaster/WebstormProjects/careYourPlants/packages/custom/plants/server/routes/plants.js",
+		"/home/mariocaster/WebstormProjects/careYourPlants/packages/custom/plants/public/controllers/plants.js",
+		"/home/mariocaster/WebstormProjects/careYourPlants/paths.js",
+		"/home/mariocaster/WebstormProjects/careYourPlants/path.js",
+		"/home/mariocaster/WebstormProjects/careYourPlants/node_modules/meanio/node_modules/mean-cli/node_modules/bower/node_modules/bower-config/lib/util/paths.js",
+		"/home/mariocaster/WebstormProjects/careYourPlants/node_modules/karma-coverage/node_modules/istanbul/node_modules/resolve/lib/node-modules-paths.js",
+		"/home/mariocaster/WebstormProjects/careYourPlants/node_modules/gulp/node_modules/liftoff/node_modules/resolve/lib/node-modules-paths.js",
+		"/home/mariocaster/WebstormProjects/careYourPlants/tools/grunt/grunt.json",
+		"/home/mariocaster/WebstormProjects/careYourPlants/tools/grunt/Gruntfile.js",
+		"/home/mariocaster/safad.html",
+		"/home/mariocaster/tmp/myPlants/packages/custom/plants/app.js",
+		"/home/mariocaster/tmp/myPlants/packages/system/app.js"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"/home/mariocaster/WebstormProjects/myplants"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"GOPATH",
+			"', '",
+			"'Family',",
+			"name",
+			"Mario",
+			"l",
+			"background-color:#beecea;",
+			"providerInjector",
+			"message",
+			"(2==i?\"?\":\"&\")",
+			"message=message+(2==i?\"?\":\"&\")+\"p\"+(i-2",
+			"\"1.3.2\"",
+			"plants?articleId"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "part0.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

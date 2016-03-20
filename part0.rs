@@ -1,18 +1,16 @@
 enum NumberOrNothing {
     Number(i32),
-    Nothing
+    Nothing,
 }
 
-use self::NumberOrNothing::{Number,Nothing};
+use self::NumberOrNothing::{Number, Nothing};
 
 fn vec_min(vec: Vec<i32>) -> NumberOrNothing {
     let mut min = Nothing;
 
     for el in vec {
         match min {
-            Nothing => {
-                min = Number(el)
-            },
+            Nothing => min = Number(el),
             Number(n) => {
                 let new_min = min_i32(n, el);
                 min = Number(new_min)
@@ -31,7 +29,7 @@ fn min_i32(a: i32, b: i32) -> i32 {
 }
 
 fn read_vec() -> Vec<i32> {
-    vec![18,5,7,1,9,27]
+    vec![18, 5, 7, 1, 9, 27]
 }
 
 fn print_number_or_nothing(n: NumberOrNothing) {
@@ -41,8 +39,11 @@ fn print_number_or_nothing(n: NumberOrNothing) {
     };
 }
 
-pub fn main(){
+pub fn main() {
     let vec = read_vec();
-    let min = vec_min(vec);
+    let min = vec_min(&vec);
     print_number_or_nothing(min);
+
+    let recmin = vec_min_rec(vec, Nothing);
+    print_number_or_nothing(recmin);
 }
