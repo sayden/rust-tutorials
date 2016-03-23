@@ -1,0 +1,9 @@
+[package]
+name = "three"
+version = "0.1.0"
+authors = ["Mario Castro <mariocaster@gmail.com>"]
+
+[dependencies]
+piston_window = "0.32.0"
+piston = "0.18.0"
+piston2d-graphics = "0.15.0"
