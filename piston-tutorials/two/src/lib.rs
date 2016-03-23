@@ -62,7 +62,7 @@ pub fn two() {
         // box position + box_size
 
         over = match ball_x_pos {
-            e if (e + ball_size) >= box_x_pos && e <= (box_x_pos + box_size) => true,
+            pos if (pos + ball_size) >= box_x_pos && pos <= (box_x_pos + box_size) => true,
             _ => false,
         }
     }
