@@ -10,7 +10,6 @@ enum Direction {
     Right,
     Down,
     Up,
-    None,
 }
 
 pub fn four() {
@@ -34,7 +33,7 @@ pub fn four() {
     let mut ball_x_direction = Direction::Right;
     let mut ball_y_direction = Direction::Down;
 
-    let mut over = false;
+    let mut over: bool;
 
     for e in window {
 
@@ -71,7 +70,7 @@ pub fn four() {
             _ => false,
         };
 
-        let key_press = Direction::Down;
+        let key_press: Direction;
 
         // Check keypresses
         match e.clone().event {
@@ -92,6 +91,7 @@ pub fn four() {
             _ => (),
         }
 
+        // Draw the resulting image
         e.draw_2d(|c, g| {
             clear([1.0; 4], g);
 
