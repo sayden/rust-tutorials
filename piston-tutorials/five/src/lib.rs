@@ -76,8 +76,8 @@ pub fn five() {
 
     let game_box = Game_Box::new(&game, 100 as f64);
 
-    let mut box_x_pos: f64 = (game.width / 2f64) - game_box.size / 2f64;
-    let mut box_y_pos: f64 = (game.height / 2f64) - game_box.size / 2f64;
+    // let mut box_x_pos: f64 = (game.width / 2f64) - game_box.size / 2f64;
+    // let mut box_y_pos: f64 = (game.height / 2f64) - game_box.size / 2f64;
 
     let mut over: bool;
 
@@ -110,8 +110,8 @@ pub fn five() {
         // It's over if ball position + ball_size is greater than box position and lower than
         // box position + box_size
         over = match (ball.x_pos, ball.y_pos) {
-            (pos_x, pos_y) if (pos_x + ball.diameter) >= box_x_pos &&
-                              pos_x <= (box_x_pos + game_box.size) &&
+            (pos_x, pos_y) if (pos_x + ball.diameter) >= game_box.x_pos &&
+                              pos_x <= (game_box.x_pos + game_box.size) &&
                               (pos_y + ball.diameter) >= box_y_pos &&
                               pos_y <= (box_y_pos + game_box.size) => true,
             _ => false,
@@ -127,12 +127,12 @@ pub fn five() {
                         match but {
                             Button::Keyboard(Key::Up) => box_y_pos -= 5f64,
                             Button::Keyboard(Key::Down) => box_y_pos += 5f64,
-                            Button::Keyboard(Key::Right) => box_x_pos += 5f64,
-                            Button::Keyboard(Key::Left) => box_x_pos -= 5f64,
-                            _ => box_x_pos += 0f64,
+                            Button::Keyboard(Key::Right) => game_box.x_pos += 5f64,
+                            Button::Keyboard(Key::Left) => game_box.x_pos -= 5f64,
+                            _ => game_box.x_pos += 0f64,
                         };
                     }
-                    _ => box_x_pos += 0f64,
+                    _ => game_box.x_pos += 0f64,
                 }
             }
             _ => (),
@@ -153,7 +153,7 @@ pub fn five() {
             };
 
             rectangle(color,
-                      [box_x_pos, box_y_pos, game_box.size, game_box.size],
+                      [game_box.x_pos, box_y_pos, game_box.size, game_box.size],
                       c.transform,
                       g);
         });
