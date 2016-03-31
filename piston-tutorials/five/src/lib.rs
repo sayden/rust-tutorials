@@ -103,6 +103,27 @@ impl GameBox {
                   c.transform,
                   g);
     }
+
+    fn check_events(&mut self, e: &PistonWindow) {
+        // Check keypresses
+        match e.clone().event {
+            Some(Event::Input(inp)) => {
+                match inp {
+                    Input::Press(but) => {
+                        match but {
+                            Button::Keyboard(Key::Up) => self.y_pos -= 5f64,
+                            Button::Keyboard(Key::Down) => self.y_pos += 5f64,
+                            Button::Keyboard(Key::Right) => self.x_pos += 5f64,
+                            Button::Keyboard(Key::Left) => self.x_pos -= 5f64,
+                            _ => self.x_pos += 0f64,
+                        };
+                    }
+                    _ => self.x_pos += 0f64,
+                }
+            }
+            _ => (),
+        }
+    }
 }
 
 pub struct Game {
@@ -136,26 +157,8 @@ pub fn five() {
 
         ball.check_new_position(&game);
 
-        let key_press: Direction;
-
-        // Check keypresses
-        match e.clone().event {
-            Some(Event::Input(inp)) => {
-                match inp {
-                    Input::Press(but) => {
-                        match but {
-                            Button::Keyboard(Key::Up) => game_box.y_pos -= 5f64,
-                            Button::Keyboard(Key::Down) => game_box.y_pos += 5f64,
-                            Button::Keyboard(Key::Right) => game_box.x_pos += 5f64,
-                            Button::Keyboard(Key::Left) => game_box.x_pos -= 5f64,
-                            _ => game_box.x_pos += 0f64,
-                        };
-                    }
-                    _ => game_box.x_pos += 0f64,
-                }
-            }
-            _ => (),
-        }
+        // Used to respond to user input and move the box
+        game_box.check_events(&e);
 
         // Draw the resulting image
         e.draw_2d(|c, g| {
