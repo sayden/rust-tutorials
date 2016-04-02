@@ -38,18 +38,21 @@ impl Ball {
                 g);
     }
 
-    fn check_new_position(&mut self, game: &Game) {
+    fn check_new_position(&mut self, game: &Game, player_a: &GameBox) {
         let cur = self.x_direction.clone();
-
         self.x_direction = match self.x_direction {
-            Direction::Right if (self.x_pos >= game.width - self.diameter) => Direction::Left,
+            Direction::Right if (self.x_pos + self.diameter >= game.width) => Direction::Left,
+            Direction::Right if (self.x_pos + self.diameter >= player_a.x_pos) &&
+                                (self.y_pos + self.diameter >= player_a.y_pos) &&
+                                (self.y_pos + self.diameter <=
+                                 player_a.y_pos + player_a.height) => Direction::Left,
             Direction::Left if (self.x_pos <= 0f64) => Direction::Right,
             _ => cur,
         };
 
         let cur = self.y_direction.clone();
         self.y_direction = match self.y_direction {
-            Direction::Down if (self.y_pos >= game.height - self.diameter) => Direction::Up,
+            Direction::Down if (self.y_pos + self.diameter >= game.height) => Direction::Up,
             Direction::Up if (self.y_pos <= 0f64) => Direction::Down,
             _ => cur,
         };
@@ -71,15 +74,17 @@ impl Ball {
 pub struct GameBox {
     x_pos: f64,
     y_pos: f64,
-    size: f64,
+    width: f64,
+    height: f64,
 }
 
 impl GameBox {
-    pub fn new(g: &Game, size: f64) -> Self {
+    pub fn new(x_pos: f64, y_pos: f64, width: f64, height: f64) -> Self {
         GameBox {
-            x_pos: (g.width / 2f64) - size / 2f64,
-            y_pos: (g.height / 2f64) - size / 2f64,
-            size: size,
+            x_pos: x_pos,
+            y_pos: y_pos,
+            width: width,
+            height: height,
         }
     }
 
@@ -88,9 +93,9 @@ impl GameBox {
         // box position + box_size
         let over = match (ball.x_pos, ball.y_pos) {
             (pos_x, pos_y) if (pos_x + ball.diameter) >= self.x_pos &&
-                              pos_x <= (self.x_pos + self.size) &&
+                              pos_x <= (self.x_pos + self.width) &&
                               (pos_y + ball.diameter) >= self.y_pos &&
-                              pos_y <= (self.y_pos + self.size) => true,
+                              pos_y <= (self.y_pos + self.height) => true,
             _ => false,
         };
 
@@ -100,7 +105,7 @@ impl GameBox {
         };
 
         rectangle(color,
-                  [self.x_pos, self.y_pos, self.size, self.size],
+                  [self.x_pos, self.y_pos, self.width, self.height],
                   c.transform,
                   g);
     }
@@ -142,9 +147,12 @@ impl Game {
 }
 
 pub fn six() {
-    let game = Game::new(640.0, 480.0);
+    let width = 640.0;
+    let height = 480.0;
 
-    let window: PistonWindow = WindowSettings::new("Hello Piston!",
+    let game = Game::new(width, height);
+
+    let window: PistonWindow = WindowSettings::new("Ping Pong!",
                                                    [game.width as u32, game.height as u32])
                                    .exit_on_esc(true)
                                    .build()
@@ -152,14 +160,19 @@ pub fn six() {
 
 
     let mut ball = Ball::new(0.0, 0.0, 50.0);
-    let mut game_box = GameBox::new(&game, 100 as f64);
+
+    let player_box_x_pos = width - 50.0;
+    let player_box_y_pos = 20.0;
+    let box_width = 25.0;
+    let box_height = 150.0;
+    let mut game_box = GameBox::new(player_box_x_pos, player_box_y_pos, box_width, box_height);
 
     for e in window {
 
-        ball.check_new_position(&game);
-
         // Used to respond to user input and move the box
         game_box.check_events(&e);
+
+        ball.check_new_position(&game, &game_box);
 
         // Draw the resulting image
         e.draw_2d(|c, g| {
