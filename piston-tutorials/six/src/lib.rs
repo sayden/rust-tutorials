@@ -159,7 +159,7 @@ pub fn six() {
                                    .unwrap();
 
 
-    let mut ball = Ball::new(0.0, 0.0, 50.0);
+    let mut ball = Ball::new(0.0, 0.0, 25.0);
 
     let player_box_x_pos = width - 50.0;
     let player_box_y_pos = 20.0;
